@@ -5,7 +5,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CheckingData"
         mc:Ignorable="d"
-        Title="" Height="658" Width="496">
+        Title="" Height="658" Width="496"
+        WindowStyle="None"
+        MouseLeftButtonDown="Window_MouseLeftButtonDown"
+        MinHeight="658" MaxHeight="658" MinWidth="496" MaxWidth="496">
     <Window.Resources>
         <Style x:Key="FocusVisual">
             <Setter Property="Control.Template">
@@ -82,7 +85,7 @@
             <Rectangle HorizontalAlignment="Center" Height="692" Stroke="Black" VerticalAlignment="Center" Width="480" Fill="#FF1F1F1F"/>
 
             <Label Content="Исходный Файл" HorizontalAlignment="Left" Margin="36,13,0,0" VerticalAlignment="Top" FontSize="14" Foreground="White"/>
-            <TextBox x:Name="T1" HorizontalAlignment="Left" Margin="41,45,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="286" Height="35" FontSize="14" FontFamily="Segoe UI" Background="#FF7F7F7F" BorderBrush="White" Foreground="White"/>
+            <TextBox x:Name="T1" HorizontalAlignment="Left" Margin="41,45,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="286" Height="35" FontSize="14" FontFamily="Segoe UI" Background="White" BorderBrush="Black" Foreground="Black"/>
             <Button x:Name="B1" Content="Найти" HorizontalAlignment="Left" Margin="337,44,0,0" VerticalAlignment="Top" FontSize="14" Height="35" Width="96" Click="B1_Click" BorderBrush="White"/>
             <CheckBox x:Name="C_FIO" Canvas.Left="13" Canvas.Top="182" Margin="41,93,382,339">
                 <CheckBox.LayoutTransform>
@@ -121,7 +124,7 @@
             </CheckBox>
             <Label Content="Проверка номера паспорта " HorizontalAlignment="Left" Margin="90,314,0,0" VerticalAlignment="Top" Foreground="White"/>
             <Label Content="Результат проверки" HorizontalAlignment="Left" Margin="34,482,0,0" VerticalAlignment="Top" FontSize="14" Foreground="White"/>
-            <TextBox x:Name="T2" HorizontalAlignment="Left" Margin="40,512,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="290" Height="34" FontSize="14" FontFamily="Segoe UI" Background="#FF7F7F7F" BorderBrush="White" Foreground="White"/>
+            <TextBox x:Name="T2" HorizontalAlignment="Left" Margin="40,512,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="290" Height="34" FontSize="14" FontFamily="Segoe UI" Background="White" BorderBrush="Black" Foreground="Black"/>
             <Button x:Name="B2" Content="Найти" HorizontalAlignment="Left" Margin="340,512,0,0" VerticalAlignment="Top" FontSize="14" Height="36" Width="96" Click="B2_Click" BorderBrush="White"/>
             <Button x:Name="BB" Style="{DynamicResource ButtonStyle1}" Content="Запустить обработку" HorizontalAlignment="Left" Margin="38,562,0,0" VerticalAlignment="Top" Width="397" Height="34" FontSize="14" Click="BB_Click"/>
             <Button Content="Узнать описание" HorizontalAlignment="Left" Margin="338,95,0,0" VerticalAlignment="Top" Height="27" Click="Button_Click" BorderBrush="White"/>
@@ -131,11 +134,11 @@
             <Button Content="Узнать описание" HorizontalAlignment="Left" Margin="338,272,0,0" VerticalAlignment="Top" Height="27" Click="Button_Click_4" BorderBrush="White"/>
             <Button Content="Узнать описание" HorizontalAlignment="Left" Margin="338,315,0,0" VerticalAlignment="Top" Height="27" Click="Button_Click_5" BorderBrush="White"/>
 
-            <TextBox x:Name="Mesto" HorizontalAlignment="Left" Margin="40,385,0,0" TextWrapping="Wrap" Text="Не обязательно" VerticalAlignment="Top" Width="289" Height="34" FontSize="14" FontFamily="Segoe UI" GotFocus="textBox_GotFocus" LostFocus="textBox_LostFocus" Background="#FF7F7F7F" BorderBrush="White" Foreground="White"/>
+            <TextBox x:Name="Mesto" HorizontalAlignment="Left" Margin="40,385,0,0" TextWrapping="Wrap" Text="Не обязательно" VerticalAlignment="Top" Width="289" Height="34" FontSize="14" FontFamily="Segoe UI" GotFocus="textBox_GotFocus" LostFocus="textBox_LostFocus" Background="White" BorderBrush="Black" Foreground="Black"/>
 
             <Label Content="Указать место для создания результата" HorizontalAlignment="Left" Margin="38,352,0,0" VerticalAlignment="Top" Foreground="White" FontSize="14"/>
             <Button x:Name="Mesto_Button" Content="Найти" HorizontalAlignment="Left" Margin="338,384,0,0" VerticalAlignment="Top" FontSize="14" Height="36" Width="96" Click="Mesto_Button_Click" BorderBrush="White"/>
-            <TextBox x:Name="Name" HorizontalAlignment="Left"  GotFocus="textBox_GotFocus1" LostFocus="textBox_LostFocus1" Margin="40,450,0,0" TextWrapping="Wrap" Text="Не обязательно" VerticalAlignment="Top" Width="392" Height="34" FontSize="14" FontFamily="Segoe UI" Background="#FF7F7F7F" BorderBrush="White" Foreground="White"/>
+            <TextBox x:Name="Name" HorizontalAlignment="Left"  GotFocus="textBox_GotFocus1" LostFocus="textBox_LostFocus1" Margin="40,450,0,0" TextWrapping="Wrap" Text="Не обязательно" VerticalAlignment="Top" Width="392" Height="34" FontSize="14" FontFamily="Segoe UI" Background="White" BorderBrush="Black" Foreground="Black"/>
             <Label Content="Указать предпочтительное имя" HorizontalAlignment="Left" Margin="37,420,0,0" VerticalAlignment="Top" Foreground="White" FontSize="14"/>
         </Grid>
     </Border>
